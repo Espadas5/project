@@ -1,0 +1,84 @@
+<style>
+    
+    form{
+      margin-top: 2%;
+      margin-bottom: 10%;
+      width: 50%;
+      margin: auto;
+      background-color: white;
+    }
+
+    .form-group{
+      width: 50%;
+      text-align: center;
+      margin: auto;
+    }
+
+    label{
+      color: black;
+      font-weight: bold;
+    }
+    
+    body{
+        background-image:url(https://www.todofondos.net/wp-content/uploads/todofondos-4KparaPC24.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    a:hover{
+        text-decoration: none;
+        color: black;
+    }
+
+</style>
+<br>
+<br>
+<br>
+<br>
+<form action="/registro" method="post">
+    <br>
+    <center><h3>Ingrese sus datos:</h3></center>
+    <div class="form-group">
+        <label for="exampleInputNombre1">Nombre</label>
+        <input type="text" class="form-control" id="exampleInputNombre1" name="nombre" aria-describedby="nombreHelp" placeholder="Nombre">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="exampleInputApellido1">Apellido</label>
+        <input type="text" class="form-control" id="exampleInputApellido1" name="apellido" aria-describedby="apellidoHelp" placeholder="Apellido">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="exampleInputUsuario1">Usuario</label>
+        <input type="text" class="form-control" id="exampleInputUsuario1" name="username" aria-describedby="usuarioHelp" placeholder="Usuario">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="exampleInputCorreo">Correo</label>
+        <input type="email" class="form-control" id="exampleInputCorreo1" name="correo" aria-describedby="correoHelp" placeholder="Correo">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputContraseña1">Contraseña:</label>
+      <input type="password" class="form-control" id="exampleInputContraseña1" name="password" placeholder="Contraseña">
+      
+    </div>
+    <br>
+    <center>
+        <div class="form-check">
+            <label class="form-check-label" for="exampleCheck1">
+                Acepto los terminos y condiciones
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+            </label>
+        </div>
+    <br>
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+    </center><br>
+</form>

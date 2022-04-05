@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-TecnoWorld</title>
+	<link rel="stylesheet" href="/src/public/bootstrap/css/custom.css">
+	<link rel="stylesheet" href="/src/public/bootstrap/css/normalize.css">
+	<link rel="stylesheet" href="/src/public/bootstrap/css/skeleton.css">
+</head>
+<body>
+
+	<style>
+		a{
+			text-decoration: none;
+			color: white;
+			text-align: center;
+		}
+		a:hover{
+			color: darkcyan;
+			
+		}
+        .row{
+            margin-top: 2%;
+            margin-bottom: 2%;
+        
+        }
+        .card{
+            margin-left: 50%;
+        }
+    
+        .card, .card-body, .list-group, .list-group-item{
+            color: white;
+            font-weight: bolder;
+            background-color: rgb(26, 27, 46);
+        }
+		table{
+			background-color: white;
+			text-align: center;
+			margin: auto;
+			border: 100;
+		}
+    </style>
+
+    <header id="header" class="header">
+        <!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    	<!-- Container wrapper -->
+    	<div class="container">
+    		<!-- Navbar brand -->
+      		<a class="navbar-brand me-2" href="https://mdbgo.com/">
+	        <img
+          	src="https://i.pinimg.com/originals/38/8a/b4/388ab4974ce8bc27bd382827ef0d2145.png"
+          	height="35"
+          	alt="MDB Logo"
+          	loading="lazy"
+          	style="margin-top: -1px;"/>
+      	</a>
+  
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarButtonsExample">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">SoftCuming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mi cuenta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">biblioteca</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ofertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/home">Cerrar Sesion</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+    </header>
+	<br><br>
+	
+	<div class="two columns u-pull-right">
+		<ul>
+			<li class="submenu">
+			<div class="table table-dark submenu">
+				<div id="carrito">
+					<table id="lista-carrito" class="u-full-width">
+						<thead>
+							
+							<tr>
+								<th scope="col">Imagen</th>
+								<th scope="col">Nombre</th>
+								<th scope="col">Precio</th>
+								<th> Eliminar</th>
+								
+							</tr>
+						</thead>
+						<tbody></tbody>						
+					</table>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<center>
+		<a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		<a href="#" id="comprar" class="button u-full-width">Realizar compra</a>
+	</center>
+	<br>
+
+    <div id="lista-cafe" class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card" style="width:17rem;">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/397540/header.jpg?t=1646090246" class="u-full-width" >
+                    <div class="info-card">
+                        <h4>Borderlands 3</h4>
+                        <p>Lanzamiento: 2013</p>
+                        <li class="list-group-item">Reseñas: Muy positivas</li>
+                        <li class="list-group-item">Descuento: 75%</li>
+                        <li class="list-group-item"><p class="precio">Precio: <del>Mex $899</del><span class="u-pull-right"><br>Mex $224</span></p></li>
+                        <center><img src="img/estrellas.png" width="120px"></center>
+                        <br>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card" style="width:17rem;">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/1174180/header.jpg?t=1618851907" class="u-full-width" >
+                    <div class="info-card">
+                        <h4>Red Dead Redemption II</h4>
+                        <p>Lanzamiento: 2013</p>
+                        <li class="list-group-item">Reseñas: Muy positivas</li>
+                        <li class="list-group-item">Descuento: 75%</li>
+                        <li class="list-group-item"><p class="precio">Precio: <del>Mex $899</del><span class="u-pull-right"><br>Mex $224</span></p></li>
+                        <center><img src="img/estrellas.png" width="120px"></center>
+                        <br>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            
+			<div class="col-sm-3">
+                <div class="card" style="width:17rem;">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/1190460/header.jpg?t=1636451066" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Death Stranding</h4>
+                        <p>Lanzamiento: 2020</p>
+                        <li class="list-group-item">Reseñas: Muy positivas</li>
+                        <li class="list-group-item">Descuento: 75%</li>
+                        <li class="list-group-item"><p class="precio">Precio: <del>Mex $899</del><span class="u-pull-right"><br>Mex $224</span></p></li>
+                        <center><img src="img/estrellas.png" width="120px"></center>
+                        <br>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito                        
+                        ">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!--.row-->
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card" style="width: 17rem;">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg?t=1647417960" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Cyberpunk 2077</h4>
+                        <p>Lanzamiento: 2021</p>
+                        <p>Modelo: Reg & Blue</p>
+                        <li class="list-group-item">Reseñas: Muy positivas</li>
+                        <li class="list-group-item">Descuento: 75%</li>
+                        <li class="list-group-item"><p class="precio">Precio: <del>Mex $899</del><span class="u-pull-right"><br>Mex $224</span></p></li>
+                        <center><img src="img/estrellas.png" width="120px"></center>
+                        <br>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito                        
+                        ">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card" style="width: 17rem;">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/524220/header.jpg?t=1646911723" class="u-full-width">
+                    <div class="info-card">
+                        <h4>NieR: Automata</h4>
+                        <p>Lanzamiento: 2017</p>
+                        <p>Modelo: P30 Pro</p>
+                        <li class="list-group-item">Reseñas: Muy positivas</li>
+                        <li class="list-group-item">Descuento: 75%</li>
+                        <li class="list-group-item"><p class="precio">Precio: <del>Mex $899</del><span class="u-pull-right"><br>Mex $224</span></p></li>
+                        <center><img src="img/estrellas.png" width="120px"></center>
+                        <br>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito                        
+                        ">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 17rem;">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/377160/header.jpg?t=1635279860" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Fallout 4</h4>
+                        <p>Lanzamiento: 2015</p>
+                        <p>Modelo: Iphone 11 Pro</p>
+                        <li class="list-group-item">Reseñas: Muy positivas</li>
+                        <li class="list-group-item">Descuento: 75%</li>
+                        <li class="list-group-item"><p class="precio">Precio: <del>Mex $899</del><span class="u-pull-right"><br>Mex $224</span></p></li>
+                        <center><img src="img/estrellas.png" width="120px"></center>
+                        <br>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito                        
+                        ">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div><!--.row-->
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card" style="width: 17rem;">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/1151640/header.jpg?t=1635442187" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Horizon Zero Dawn</h4>
+                        <p>Lanzamiento: 2020</p>
+                        <p>Modelo: Series X</p>
+                        <li class="list-group-item">Reseñas: Muy positivas</li>
+                        <li class="list-group-item">Descuento: 75%</li>
+                        <li class="list-group-item"><p class="precio">Precio: <del>Mex $899</del><span class="u-pull-right"><br>Mex $224</span></p></li>
+                        <center><img src="img/estrellas.png" width="120px"></center>
+                        <br>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito                        
+                        ">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 17rem;">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/1593500/header.jpg?t=1642526157" class="u-full-width">
+                    <div class="info-card">
+                        <h4>God of War</h4>
+                        <p>Lanzamiento: 2022</p>
+                        <p>Modelo: G733</p>
+                        <li class="list-group-item">Reseñas: Muy positivas</li>
+                        <li class="list-group-item">Descuento: 75%</li>
+                        <li class="list-group-item"><p class="precio">Precio: <del>Mex $899</del><span class="u-pull-right"><br>Mex $224</span></p></li>
+                        <center><img src="img/estrellas.png" width="120px"></center>
+                        <br>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito                        
+                        ">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 17rem;">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/1238810/header.jpg?t=1641312066" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Battlefield V</h4>
+                        <p>Lanzamiento: 2018</p>
+                        <P>Modelo: PS5 Pro</P>
+                        <li class="list-group-item">Reseñas: Muy positivas</li>
+                        <li class="list-group-item">Descuento: 75%</li>
+                        <li class="list-group-item"><p class="precio">Precio: <del>Mex $899</del><span class="u-pull-right"><br>Mex $224</span></p></li>
+                        <center><img src="img/estrellas.png" width="120px"></center>
+                        <br>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito                        
+                        ">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div><!--.row-->
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card" style="width: 17rem;">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/976730/header.jpg?t=1634144453" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Halo Master Chief Collection</h4>
+						<p>Lanzamiento: 2013</p>
+                        <li class="list-group-item">Reseñas: Muy positivas</li>
+                        <li class="list-group-item">Descuento: 75%</li>
+                        <li class="list-group-item"><p class="precio">Precio: <del>Mex $899</del><span class="u-pull-right"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mex $224</span></p></li>
+
+                        <center><img src="img/estrellas.png" width="120px"></center>
+                        <br>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito                        
+                        ">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 17rem;">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/1237950/header.jpg?t=1615894850" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Star Wars™ Battlefront™ II</h4>
+                        <p>Lanzamiento: 2013</p>
+                        <li class="list-group-item">Reseñas: Muy positivas</li>
+                        <li class="list-group-item">Descuento: 75%</li>
+                        <li class="list-group-item"><p class="precio">Precio: <del>Mex $899</del><span class="u-pull-right"><br>Mex $224</span></p></li>
+                        <center><img src="img/estrellas.png" width="120px"></center>
+                        <br>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito                        
+                        ">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 17rem;">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/203160/header.jpg?t=1644227315" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Tomb Raider</h4>
+						<br>
+                        <P>Lanzamiento: 2013</P>
+                        <!-- <p><a href="###">descripcion</a></p> -->
+						<li class="list-group-item">Reseñas: Muy positivas</li>
+                        <li class="list-group-item">Descuento: 75%</li>
+                        <li class="list-group-item"><p class="precio">Precio: <del>Mex $899</del><span class="u-pull-right"><br>Mex $224</span></p></li>
+                        <center><img src="img/estrellas.png" width="120px"></center>
+                        <br>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito                        
+                        ">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div><!--.row-->
+    </div>
+
+    <script>
+		const carrito = document.getElementById('carrito');
+		const cafes = document.getElementById('lista-cafe');
+		const listaCafes = document.querySelector('#lista-carrito tbody');
+		const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
+
+		cargarEventListeners();
+
+		function cargarEventListeners () {
+    		cafes.addEventListener('click', comprarCafe);
+    		carrito.addEventListener('click', eliminarCafe);
+    		vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+    		document.addEventListener('DOMContentLoaded', leerLocalStorage)
+		}
+
+		function comprarCafe(e){
+    		e.preventDefault();
+    		if(e.target.classList.contains('agregar-carrito')) {
+        		const cafe = e.target.parentElement.parentElement;
+        		leerDatosCafe(cafe);
+    		}
+		}
+
+		function leerDatosCafe(cafe) {
+    		const infoCafe = {
+        		imagen: cafe.querySelector('img').src,
+        		titulo: cafe.querySelector('h4').textContent,
+        		precio: cafe.querySelector('.precio span').textContent,
+        		id: cafe.querySelector('a').getAttribute('date-id')
+    		}
+    		insertarCarrito(infoCafe);
+		}
+
+		function insertarCarrito(cafe) {
+    		const row = document.createElement('tr');
+    		row.innerHTML = `
+        	<td>
+            	<img src="${cafe.imagen}" width=100>
+        	</td>
+        	<td>${cafe.titulo}</td>
+        	<td>${cafe.precio}</td>
+        	<td>
+	            <a href="#" class="borrar-cafe" data-id="${cafe.id}">X</a>
+        	</td>`;
+    		listaCafes.appendChild(row);
+    		guardarCafeLocalStorage(cafe);
+		}
+
+
+		function eliminarCafe(e) {
+    		e.preventDefault();
+
+    		let cafe,cafeId;
+    		if(e.target.classList.contains('borrar-cafe')){
+        		e.target.parentElement.parentElement.remove();
+        		cafe = e.target.parentElement.parentElement;
+        		cafeId = cafe.querySelector('a').getAttribute('data-id');
+    		}
+    		eliminarCafeLocalStorage(cafeId);
+		}
+
+		function vaciarCarrito() {
+    		while(listaCafes.firstChild){
+        		listaCafes.removeChild(listaCafes.firstChild);
+    		}
+			vaciarLocalStorage();
+    		return false;
+		}
+
+		function guardarCafeLocalStorage(cafe) {
+    		let cafes;
+    		cafes = obtenerCafesLocalStorage();
+    		cafes.push(cafe);
+    		localStorage.setItem('cafes', JSON.stringify(cafes))
+		}
+
+		function obtenerCafesLocalStorage() {
+    		let cafesLS;
+
+		    if(localStorage.getItem('cafes') === null){
+        		cafesLS = [];
+    		} else {
+        		cafesLS = JSON.parse(localStorage.getItem('cafes'));
+    		}
+    		return cafesLS;
+		}
+
+		function leerLocalStorage() {
+    		let cafesLS;
+    		cafesLS = obtenerCafesLocalStorage();
+    		cafesLS.forEach(function(cafe){
+        		const row = document.createElement('tr');
+        		row.innerHTML = `
+            	<td>
+                	<img src="${cafe.imagen}" width=100> 
+            	</td>
+            	<td>${cafe.titulo}</td>
+            	<td>${cafe.precio}</td>
+            	<td>
+                	<a href="#" class="borrar-cafe" data-id="${cafe.id}">X</a>
+            	</td>`;
+        		listaCafes.appendChild(row);
+    		});
+		}
+		function eliminarCafeLocalStorage(cafe) {
+    		let cafesLS;
+    		cafesLS = obtenerCafesLocalStorage();
+	    	cafesLS.forEach(function(cafesLS, index){
+        		if(cafesLS.id === cafe) {
+            		cafesLS.splice(index, 1)
+        		}
+    		});
+    		localStorage.setItem('cafes', JSON.stringify(cafesLS));
+		}
+
+		function vaciarLocalStorage() {
+    		localStorage.clear();
+		}
+	</script>
+</body>
+</html>

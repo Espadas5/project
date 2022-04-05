@@ -1,0 +1,71 @@
+<style>
+    
+  form{
+    margin-top: 11.6%;
+    margin-bottom: 11.6%;
+  }
+
+  b{
+    color: white;
+  }
+  .form-group{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+  }
+
+  label{
+    color: white;
+    font-weight: bold;
+  }
+  
+  body{
+    background-image:url(https://www.todofondos.net/wp-content/uploads/todofondos-4KparaPC24.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  a{
+  text-decoration: none;
+  color: white;
+  }
+  a:hover{
+    color: white;
+  }
+
+  .radio{
+    color: white;
+    padding: 10px;
+  }
+
+</style>
+
+<div class="form-group">
+  <form action="/auth" method="post">
+  <label for="correo">
+    <!-- font awesome icon -->
+    <i class="fas fa-user"></i>
+  </label>
+  <b>Correo electronico</b>
+  <input type="text" class="form-control" name="correo" placeholder="Correo" id="correo" required>
+  <label for="contraseña">
+    <i class="fas fa-lock"></i>
+  </label>
+  <b>Contraseña</b>
+  <input type="password" class="form-control" name="password" placeholder="Contraseña" id="contraseña" required>
+  
+  <div class="radio">
+  <input type="radio"  name="tipo" value="1" id="1" required>Usuario 
+  <br>
+  <input type="radio"  name="tipo" value="2" id="2" required>Administrador
+  <br> 
+</div>
+
+  <input type="submit" class="btn btn-primary" value="Iniciar sesion">
+</form>
+<form action="/registro-cliente" method="get">
+  <input type="submit" class="btn btn-secondary" value="Registrarse">
+</form>
+</div>
+
