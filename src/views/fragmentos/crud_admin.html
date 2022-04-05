@@ -1,0 +1,51 @@
+<style>
+    th{
+        text-align: center;
+    }
+    td{
+        text-align: center;
+    }
+
+    img.juegos{
+        width: 10vw;
+        height: 10vw;
+    }
+    .ico{
+        width: 8vw;
+        height: 8vw;
+        padding-top: 15px;
+    }
+</style>
+
+<table class="table table-hover table-dark table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Desarrolladora</th>
+            <th>Precio</th>
+            <th>Descuento</th>
+            <th>Imagen</th>
+            <th>Modificar</th>
+            <th>Eliminar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% videojuegos.forEach(juegos =>{ %>
+            <tr>
+                <td><%= juegos.id_producto %></td>
+                <td><%= juegos.nombre %></td>
+                <td><%= juegos.desarrolladora %></td>
+                <td><%= juegos.precio %></td>
+                <td><%= juegos.descuento %></td>
+                <td> <img class="juegos" src="<%= juegos.imagen %>"></td>
+                <td><a href="/modificar?id=<%= juegos.id_producto %>"><img class="ico" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-edit-interface-kiranshastry-lineal-kiranshastry-1.png"/></a></td>
+                <td><a href="/eliminar?id=<%= juegos.id_producto %>"><img class="ico" src="https://img.icons8.com/ios/50/000000/delete-trash.png"/></a></td>
+
+            </tr>
+        <% }); %>
+    </tbody>
+</table>
+<center>
+<a class="btn btn-primary" href="/crear">Agregar</a>
+</center>
